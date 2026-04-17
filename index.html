@@ -1,98 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glam by Gurmaan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="hero-section">
-        <div class="hero-copy">
-          <p class="eyebrow">Luxury Makeup Artist</p>
-          <h1>Glam by Gurmaan <span>💄</span></h1>
-          <p class="hero-subtitle">Soft Glam • Full Glam • Creative Makeup | Chicago, IL</p>
-          <a class="button button-primary" href="#booking">Book Now</a>
-        </div>
-      </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glam by Gurmaan</title>
 
-      <main>
-        <section class="section about-section" id="about">
-          <div class="section-content">
-            <h2>About</h2>
-            <p>
-              I am a makeup artist specializing in soft glam, full glam, and
-              creative/editorial makeup. Each look is crafted to bring out your
-              confidence, celebrate your beauty, and deliver a personalized
-              style for every occasion.
-            </p>
-          </div>
-        </section>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
-        <section class="section services-section" id="services">
-          <div class="section-content">
-            <h2>Services</h2>
-            <div class="card-grid">
-              <div class="service-card">Soft Glam Makeup</div>
-              <div class="service-card">Full Glam Makeup</div>
-              <div class="service-card">Creative / Editorial Makeup</div>
-              <div class="service-card">Event &amp; Prom Makeup</div>
-              <div class="service-card">Photoshoot Makeup</div>
-            </div>
-          </div>
-        </section>
+<style>
+html {
+    scroll-behavior: smooth;
+}
 
-        <section class="section portfolio-section" id="portfolio">
-          <div class="section-content">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-              <div class="portfolio-card">Soft Glam</div>
-              <div class="portfolio-card">Full Glam</div>
-              <div class="portfolio-card">Creative Makeup</div>
-            </div>
-          </div>
-        </section>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff7f9;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
 
-        <section class="section pricing-section" id="pricing">
-          <div class="section-content">
-            <h2>Pricing</h2>
-            <div class="pricing-grid">
-              <div class="pricing-card">
-                <h3>Soft Glam</h3>
-                <p>$20–$35</p>
-              </div>
-              <div class="pricing-card">
-                <h3>Full Glam</h3>
-                <p>$35–$55</p>
-              </div>
-              <div class="pricing-card">
-                <h3>Creative Makeup</h3>
-                <p>$50–$90</p>
-              </div>
-            </div>
-          </div>
-        </section>
+header {
+    background: linear-gradient(135deg, #f7c6d0, #fbe9ee);
+    text-align: center;
+    padding: 90px 20px;
+}
 
-        <section class="section booking-section" id="booking">
-          <div class="section-content booking-card">
-            <h2>Booking</h2>
-            <p>Ready to glow? Reserve your session today.</p>
-            <a class="button button-secondary" href="https://forms.gle/" target="_blank" rel="noreferrer">Book Now</a>
-            <p class="booking-note">DM me on Instagram to book as well</p>
-          </div>
-        </section>
-      </main>
+header h1 {
+    font-size: 56px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
 
-      <footer class="footer">
-        <p>© 2026 Glam by Gurmaan</p>
-      </footer>
+header p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #b85c74;
+    font-family: 'Playfair Display', serif;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 26px;
+    background: linear-gradient(135deg, #b85c74, #d07a90);
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+}
+
+/* 💎 PRICING LUXURY STYLE */
+.pricing-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+}
+
+.pricing-item {
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.pricing-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    border-color: #d07a90;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #f7c6d0;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Glam by Gurmaan 💄</h1>
+    <p>Soft Glam • Full Glam • Creative Makeup | Schaumburg, IL</p>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>Hi, I’m Gurmaan! the artist behind Glam by Gurmaan 💄</p>
+
+        <p>I’m a self-taught makeup artist based in Schaumburg, IL, specializing in soft glam, full glam, and creative editorial looks.</p>
+
+        <p><strong>All appointments are done at my private home-based studio in Schaumburg, IL.</strong></p>
+
+        <p><strong>Instagram:</strong> @glambygurmaan</p>
     </div>
-  </body>
+</section>
+
+<!-- SERVICES -->
+<section>
+    <h2>Services</h2>
+    <div class="card">
+        <ul>
+            <li>Soft Glam Makeup</li>
+            <li>Full Glam Makeup</li>
+            <li>Creative / Editorial Makeup 🎨</li>
+            <li>Event & Prom Makeup</li>
+            <li>Photoshoot Makeup</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section>
+    <h2>Pricing 💰</h2>
+
+    <div class="card pricing-text">
+
+        <div class="pricing-item">
+            ✨ Soft Glam (30–45 min)<br>
+            💰 $15 – $25<br>
+            natural, soft everyday glam
+        </div>
+
+        <div class="pricing-item">
+            💄 Full Glam (60–90 min)<br>
+            💰 $25 – $35<br>
+            full coverage glam look
+        </div>
+
+        <div class="pricing-item">
+            🎨 Creative / Editorial Makeup (90–120+ min)<br>
+            💰 $40 – $50<br>
+            bold artistic looks
+        </div>
+
+        <div class="pricing-item">
+            📸 Photoshoot Makeup (60–120 min)<br>
+            💰 $40 – $50<br>
+            camera-ready finish
+        </div>
+
+        <div class="pricing-item">
+            🎉 Event & Prom Makeup (90–120 min)<br>
+            💰 $40 – $50<br>
+            special occasion glam
+        </div>
+
+    </div>
+</section>
+
+<!-- POLICIES -->
+<section>
+    <h2>Policies 💕</h2>
+
+    <div class="card">
+
+        <p><strong>Cancellation Policy:</strong> Please cancel or reschedule at least 24 hours in advance. Last-minute cancellations may affect future booking availability.</p>
+
+        <p><strong>Late Policy:</strong> Please arrive on time. If you are more than 10–15 minutes late, your appointment may be shortened or rescheduled.</p>
+
+        <p><strong>Payment:</strong> Payment is collected in person after the service is completed.</p>
+
+    </div>
+</section>
+
+<!-- CLIENT PREP -->
+<section>
+    <h2>Client Prep 💄</h2>
+
+    <div class="card">
+        <p><strong>🧼 Skin:</strong> Clean moisturized face</p>
+        <p><strong>💇‍♀️ Hair:</strong> Clean and dry</p>
+        <p><strong>⏰ Timing:</strong> Arrive on time</p>
+        <p><strong>📍 Location:</strong> Sent after booking confirmation</p>
+    </div>
+</section>
+
+<!-- BOOKING -->
+<section>
+    <h2>Book Your Glam 💌</h2>
+
+    <div class="card">
+
+        <p>Ready to get glammed? Let’s create your perfect look ✨</p>
+
+        <p><strong>Appointments are limited each week</strong></p>
+
+        <a class="button" href="https://forms.gle/oCLJ5xuXLJTV1NwQA" target="_blank">
+            Book Now
+        </a>
+
+        <p style="margin-top:15px; font-size: 14px;">
+            📍 Schaumburg, IL<br>
+            💬 Instagram: @glambygurmaan
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Glam by Gurmaan
+</footer>
+
+</body>
 </html>
